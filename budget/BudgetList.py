@@ -28,7 +28,7 @@ class BudgetList:
     def __next__(self):
         try:
             return self.iter_e.__next__()
-        except StopIteration:
+        except StopIteration as stop:
             return self.iter_o.__next__()
 
 
